@@ -1,1 +1,28 @@
 @import 'theme/theme';
+.index {
+    background: linear-gradient(179.72deg, #FFFFFF 0.24%, #F5F2E6 99.75%);
+}
+
+.number-decor {
+    position: absolute;
+    bottom: -3.25rem;
+    right: .5rem;
+    color: rgba(255, 83, 70, 0.2);
+    font-weight: bold;
+    font-size: 6.25rem;
+    line-height: 7.5rem;
+}
+
+.divider-decor {
+    position: relative;
+    &::before {
+        content: "";
+        display: inline;
+        width: 6.75rem;
+        height: .375rem;
+        background-color: $blue-126;
+        border-radius: .125rem;
+        position: absolute;
+        top: 0;
+    }
+}

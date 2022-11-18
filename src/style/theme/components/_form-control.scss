@@ -1,0 +1,10 @@
+.form-control {
+    &::placeholder {
+        font-style: italic;
+        color: $silver;
+    }
+    &:focus {
+        box-shadow: none;
+        border-color: transparent;
+    }
+}
