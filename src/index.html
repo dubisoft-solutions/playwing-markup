@@ -2,21 +2,157 @@
 <html lang="lv">
 //= html_partials/head.html
 
-<body class="index">
+<body class="index position-relative">
 
     //= html_partials/header.html
 
     <!-- Main section -->
-    <section class="container">
-        <div class="row">
-            <div class="col-12">
-                <h3>Hello from bootstrap</h3>
+    <section class="hero">
+        <div class="container">
+            <div class="row mb-5 pb-5">
+                <div class="col-lg-6 pt-5">
+                    <h1 class="text-primary mb-3"><span class="text-danger">We’re sorry</span> to see you go</h1>
+                    <p class="mb-4">We'll always remember the good times that we had.</p>
+                    <p class="fw-medium mb-4 pb-1">If you want to Unsubscribe to our service please let us know your Mobile <br> Phone Number and we will send you an SMS (don’t worry you won’t be <br> charge for this SMS)
+                    </p>
+
+                    <div class="row mb-4">
+                        <div class="col-lg-6">
+                            <div class="bg-white rounded-1 shadow p-1">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-email">
+                                        <icon class="icon icon-mail fs-6"></icon>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="bg-white rounded-1 shadow p-1">
+                                <select class="selectpicker">
+                                    <option>Country Code</option>
+                                    <option>SPAIN (+34)</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="bg-white rounded-1 shadow p-1">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-phone">
+                                        <icon class="icon icon-mobile fs-6"></icon>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Enter your phone number" aria-label="Phone number" aria-describedby="basic-phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="#" class="btn btn-danger">Send SMS</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-absolute">
+                        <img src="img/hero-img.png" alt="We’re sorry to see you go" class="w-100">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 pb-2">
+                <div class="col-lg-4">
+                    <img src="img/hero-img-two.png" alt="As easy as This!" class="w-100">
+                    <p class="fw-bold fs-6 text-center">
+                        You can choose between more than <br> 275 games divided into 9 categories.
+                    </p>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <h2 class="text-primary mb-4">As easy as <span class="text-danger">This!</span></h2>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col position-relative">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="w-56 h-56 bg-danger-gradient rounded-circle d-flex justify-content-center align-items-center mb-4">
+                                        <icon class="icon icon-mail text-white d-grid fs-4"></icon>
+                                    </div>
+                                    <div class="divider-decor pb-4"></div>
+                                    <h5 class="card-title">Enter x number and e-mail </h5>
+                                    <p class="card-text">You will receive an email from the helpdesk with a confirmation, please contact us in the same thread.</p>
+                                </div>
+                            </div>
+                            <div class="number-decor">
+                                1
+                            </div>
+                        </div>
+                        <div class="col position-relative">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="w-56 h-56 bg-danger-gradient rounded-circle d-flex justify-content-center align-items-center mb-4">
+                                        <icon class="icon icon-message text-white d-grid fs-4"></icon>
+                                    </div>
+                                    <div class="divider-decor pb-4"></div>
+                                    <h5 class="card-title">SMS</h5>
+                                    <p class="card-text">You'll receive an SMS with the unsubscribe instructions.</p>
+                                </div>
+                            </div>
+                            <div class="number-decor">
+                                2
+                            </div>
+                        </div>
+                        <div class="col position-relative">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="w-56 h-56 bg-danger-gradient rounded-circle d-flex justify-content-center align-items-center mb-4">
+                                        <icon class="icon icon-happy text-white d-grid fs-4"></icon>
+                                    </div>
+                                    <div class="divider-decor pb-4"></div>
+                                    <h5 class="card-title">Congrats!</h5>
+                                    <p class="card-text">Your request has been approved.</p>
+                                </div>
+                            </div>
+                            <div class="number-decor">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-lg-6">
+                    <p class="text-secondary fs-7 mb-0">©Playwing 2022 All the rights reserved</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#contactUsModal">Contact Us</button>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <!-- footer -->
     //= html_partials/footer.html
+
+    <!-- Contact Us Modal -->
+    <div class="modal fade" id="contactUsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="text-end pt-3 pe-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h3 class="my-5 text-center">Let's Talk!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 //= html_partials/scripts.html

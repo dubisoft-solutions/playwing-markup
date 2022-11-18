@@ -26,6 +26,11 @@ $font-icons-family-name: "IconsFont";
 }
 
 $icon-name-arrow-down: "\E001"; 
+$icon-name-flag: "\E002"; 
+$icon-name-happy: "\E003"; 
+$icon-name-mail: "\E004"; 
+$icon-name-message: "\E005"; 
+$icon-name-mobile: "\E006"; 
 
 
 @function icon-char($filename) {
@@ -33,6 +38,21 @@ $icon-name-arrow-down: "\E001";
 
 	@if $filename == arrow-down {
 		$char: "\E001";
+	}
+	@if $filename == flag {
+		$char: "\E002";
+	}
+	@if $filename == happy {
+		$char: "\E003";
+	}
+	@if $filename == mail {
+		$char: "\E004";
+	}
+	@if $filename == message {
+		$char: "\E005";
+	}
+	@if $filename == mobile {
+		$char: "\E006";
 	}
 
 	@return $char;
@@ -51,4 +71,19 @@ $icon-name-arrow-down: "\E001";
 
 .icon-arrow-down {
 	@include icon(arrow-down);
+}
+.icon-flag {
+	@include icon(flag);
+}
+.icon-happy {
+	@include icon(happy);
+}
+.icon-mail {
+	@include icon(mail);
+}
+.icon-message {
+	@include icon(message);
+}
+.icon-mobile {
+	@include icon(mobile);
 }

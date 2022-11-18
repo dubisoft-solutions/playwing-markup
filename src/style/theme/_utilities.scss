@@ -1,0 +1,47 @@
+.fw-medium {
+    font-weight: $font-weight-medium;
+}
+
+.text-secondary {
+    color: $gray!important;
+}
+
+.rounded-1 {
+    border-radius: $border-radius;
+}
+
+.rounded-2 {
+    border-radius: $border-radius-sm;
+}
+
+.rounded-3 {
+    border-radius: $border-radius-md;
+}
+
+.rounded-4 {
+    border-radius: $border-radius-lg;
+}
+
+.shadow-sm {
+    box-shadow: $box-shadow;
+}
+
+.shadow {
+    box-shadow: $box-shadow-sm;
+}
+
+.shadow-lg {
+    box-shadow: $box-shadow-md;
+}
+
+.bg-danger-gradient {
+    background: $gradient;
+}
+
+.w-56 {
+    width: 3.5rem;
+}
+
+.h-56 {
+    height: 3.5rem;
+}

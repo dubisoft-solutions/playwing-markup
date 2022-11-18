@@ -1,3 +1,84 @@
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "HK Grotesk" !default;
+$font-family-sans-serif: "Inter" !default;
+$white: #FFFFFF;
+$beige: #F5F2E7;
+$light-248: #F8F8F8;
+$light-gray: #E8E8E8;
+$silver: #AEAEAE;
+$red-31: #EF401F;
+$red-74: #FF574A;
+$red-70: #FF5346;
+$green: #32E28E;
+$blue-202: #82B9CA;
+$blue-174: #6C87AE;
+$blue-152: #657998;
+$blue-126: #08627E;
+$blue-88: #183258;
+$gray: #777777;
+$black-49: #032631;
+$black: #000000;
+// scss-docs-start color-variables
+$blue: $blue-88 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: $red-70 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+$gradient: linear-gradient(96.14deg, #FF4839 -10.84%, #FF8B84 196.74%);
+// font sizes
+$font-size-base: .875rem;
+$h1-font-size: 4rem;
+$h2-font-size: 2.75rem;
+$headings-font-weight: bold;
+$headings-line-height: 1;
+$font-weight-medium: 500;
+$font-sizes: ( 1: 6.25rem, 2: 4.375rem, 3: 3.438rem, 4: 1.875rem, 5: 1.5rem, 6: 1rem, 7: .938rem, 8: .875rem, 9: .813rem, 10: .75rem);
+$spacer: 1rem;
+$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 3.375, 7: $spacer * 3.75, 8: $spacer * 4, 9: $spacer * 4.06, 10: $spacer * 4.1875, 11: $spacer * 4.5, 12: $spacer * 4.625, 13: $spacer * 4.8125, 14: $spacer * 5.5, 15: $spacer * 5.625, 16: $spacer * 5.8125, 17: $spacer * 6, 18: $spacer * 6.375, 19: $spacer * 7.06, 20: $spacer * 7.3125, 21: $spacer * 7.875, 22: $spacer * 8, 23: $spacer * 8.125, 24: $spacer * 8.375, 25: $spacer * 8.625, 26: $spacer * 10.1875, 27: $spacer * 15, 28: $spacer * 15.625, 29: $spacer * 15.75, 30: $spacer * 19.5, 31: $spacer * 12.5, 32: $spacer * 9.68);
+$border-radius-sm: .438rem;
+// box-shadow
+$box-shadow: 0px 15.6456px 20.8608px -1.9557px rgba(3, 9, 50, 0.04) !default;
+$box-shadow-sm: 0px 3.01622px 3.01622px rgba(0, 0, 0, 0.1) !default;
+$box-shadow-md: 0px 4px 4px rgba(0, 0, 0, 0.25) !default;
+// buttons
+$btn-padding-y: 1rem;
+$btn-padding-x: 2.5rem;
+$btn-font-size: .938rem;
+$btn-font-weight: 500;
+$btn-line-height: 1rem;
+$btn-border-radius: .438rem;
+$btn-bg: linear-gradient(90.34deg, #FF5042 -11.61%, #FF8B84 197.88%);
+$btn-box-shadow: 0px 4px 4px rgba(255, 83, 70, 0.2);
+$btn-link-color: $blue-126;
+$btn-link-hover-color: $blue-174;
+// border
+$border-radius: .438rem;
+$border-radius-sm: .625rem;
+$border-radius-md: .938rem;
+$border-radius-lg: 1.25rem;
+// break points
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1548px);
+// containers
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1488px);
+// form-control
+$input-font-size: .75rem;
+$input-font-weight: $font-weight-medium;
+$input-color: $blue-152;
+$input-bg: $light-248;
+$input-border-color: $light-248;
+$input-padding-y: .313rem;
+$input-padding-x: .5rem;
+$input-group-addon-color: $light-gray;
+$input-group-addon-border-color: $light-248;
+$input-group-addon-bg: $light-248;
+// card
+$card-box-shadow: 0px 15.6456px 20.8608px -1.9557px rgba(3, 9, 50, 0.04);
+$card-border-radius: $border-radius-md;
+$card-border-color: $white;
+$card-spacer-y: 1.25rem;
+$card-spacer-x: 1.25rem;
