@@ -1,5 +1,11 @@
 ### Playwing Markup project ###
 
+Markup project created by figma design.
+
+Demo link [url](https://dubisoft-solutions.github.io/playwing-markup "Demo project link")
+
+RTL version: [url](https://dubisoft-solutions.github.io/playwing-markup?rtl=true "Demo rtl project link")
+
 ## Project structure ##
 
 *src* directory contains source files, like styles, js, and html. Once project is compiled, the *dist* directory will be created and it should be used for the production project.
