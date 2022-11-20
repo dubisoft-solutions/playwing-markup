@@ -1,2 +1,27 @@
 @import "bootstrap-select/sass/variables";
 @import "bootstrap-select/sass/bootstrap-select";
+.bootstrap-select {
+    .dropdown-toggle.btn-light {
+        border: none;
+        background-color: $light-248;
+        padding: .5rem;
+        &::placeholder {
+            font-style: italic;
+            color: $silver;
+        }
+    }
+    .dropdown-menu {
+        font-weight: 500;
+        font-size: .75rem;
+        color: $blue-152;
+        background-color: $light-248;
+        border: none;
+        padding: .75rem 0;
+        .dropdown-item {
+            &.active {
+                color: $white;
+                background-color: $blue-176;
+            }
+        }
+    }
+}

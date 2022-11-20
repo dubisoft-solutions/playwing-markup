@@ -10,3 +10,18 @@
         color: $blue-174;
     }
 }
+
+@include media-breakpoint-down(sm) {
+    .card {
+        .card-body {
+            padding: .813rem;
+        }
+        .card-title {
+            font-size: .625rem;
+        }
+        .card-text {
+            font-size: .5rem;
+            line-height: .75rem;
+        }
+    }
+}

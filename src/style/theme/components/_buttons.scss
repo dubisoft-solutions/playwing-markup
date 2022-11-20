@@ -7,3 +7,9 @@
         background-color: $red;
     }
 }
+
+@include media-breakpoint-down(sm) {
+    .btn-link {
+        font-size: .688rem;
+    }
+}

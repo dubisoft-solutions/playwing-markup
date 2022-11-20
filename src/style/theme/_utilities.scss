@@ -38,10 +38,62 @@
     background: $gradient;
 }
 
+.w-31 {
+    width: 1.938rem;
+}
+
+.h-31 {
+    height: 1.938rem;
+}
+
 .w-56 {
     width: 3.5rem;
 }
 
 .h-56 {
     height: 3.5rem;
+}
+
+.w-79 {
+    width: 4.938rem;
+}
+
+.h-79 {
+    height: 4.938rem;
+}
+
+@include media-breakpoint-down(sm) {
+    h1 {
+        font-size: 2.313rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: .75rem;
+    }
+    .fs-2 {
+        font-size: 2rem!important;
+    }
+    .fs-3 {
+        font-size: 1.688rem!important;
+    }
+    .fs-6 {
+        font-size: .75rem!important;
+    }
+    .fs-7 {
+        font-size: .75rem!important;
+    }
+    .w-56 {
+        width: 2.313rem;
+    }
+    .h-56 {
+        height: 2.313rem;
+    }
+    .w-79 {
+        width: 3rem;
+    }
+    .h-79 {
+        height: 3rem;
+    }
 }

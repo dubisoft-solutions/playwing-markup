@@ -25,18 +25,19 @@ $font-icons-family-name: "IconsFont";
 	@include icon-styles;
 }
 
-$icon-name-arrow-down: "\E001"; 
+$icon-name-check: "\E001"; 
 $icon-name-flag: "\E002"; 
 $icon-name-happy: "\E003"; 
-$icon-name-mail: "\E004"; 
-$icon-name-message: "\E005"; 
-$icon-name-mobile: "\E006"; 
+$icon-name-heart: "\E004"; 
+$icon-name-mail: "\E005"; 
+$icon-name-message: "\E006"; 
+$icon-name-mobile: "\E007"; 
 
 
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == arrow-down {
+	@if $filename == check {
 		$char: "\E001";
 	}
 	@if $filename == flag {
@@ -45,14 +46,17 @@ $icon-name-mobile: "\E006";
 	@if $filename == happy {
 		$char: "\E003";
 	}
-	@if $filename == mail {
+	@if $filename == heart {
 		$char: "\E004";
 	}
-	@if $filename == message {
+	@if $filename == mail {
 		$char: "\E005";
 	}
-	@if $filename == mobile {
+	@if $filename == message {
 		$char: "\E006";
+	}
+	@if $filename == mobile {
+		$char: "\E007";
 	}
 
 	@return $char;
@@ -69,14 +73,17 @@ $icon-name-mobile: "\E006";
 	}
 }
 
-.icon-arrow-down {
-	@include icon(arrow-down);
+.icon-check {
+	@include icon(check);
 }
 .icon-flag {
 	@include icon(flag);
 }
 .icon-happy {
 	@include icon(happy);
+}
+.icon-heart {
+	@include icon(heart);
 }
 .icon-mail {
 	@include icon(mail);
