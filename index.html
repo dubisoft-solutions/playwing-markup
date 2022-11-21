@@ -43,11 +43,13 @@
 
                         <div class="row mb-lg-4 mb-2">
                             <div class="col-lg-6">
+                                <div class="grecaptcha mb-3"></div>
+
                                 <div class="bg-white rounded-1 shadow p-1">
                                     <div class="input-group">
                                         <span class="input-group-text" id="basic-email">
-                                    <icon class="icon icon-mail fs-6"></icon>
-                                </span>
+                                            <icon class="icon icon-mail fs-6"></icon>
+                                        </span>
                                         <input type="text" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
                                     </div>
                                 </div>
@@ -57,8 +59,11 @@
                         <div class="row">
                             <div class="col-lg-3 col-5 pe-1">
                                 <div class="bg-white rounded-1 shadow p-1">
-                                    <div class="form-group">
-                                        <select class="selectpicker form-control" title="Country Code">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-country">
+                                            <icon class="icon icon-flag fs-6"></icon>
+                                        </span>
+                                        <select class="selectpicker form-control" title="Country Code" id="basic-country">
                                             <option>SPAIN (+34)</option>
                                             <option>SPAIN (+34)</option>
                                             <option>SPAIN (+34)</option>
@@ -229,9 +234,13 @@
                                             <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
                                         </div>
 
-                                        <div class="mb-lg-4 mb-3">
+                                        <div class="mb-lg-3 mb-3">
                                             <label for="messageTextarea" class="form-label">Message</label>
                                             <textarea class="form-control" id="messageTextarea" rows="5"></textarea>
+                                        </div>
+
+                                        <div class="mb-lg-4 mb-3">
+                                            <div class="grecaptcha mb-3"></div>
                                         </div>
                                     </div>
                                     <div class="d-grid">
