@@ -1,5 +1,8 @@
 .form-control {
     border: none;
+    border: 5px solid $white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-sm;
     &::placeholder {
         font-style: italic;
         color: $silver;
@@ -12,6 +15,9 @@
 
 .input-group-text {
     position: relative;
+    border: 5px solid $white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-sm;
     &::after {
         content: "";
         display: inline;
