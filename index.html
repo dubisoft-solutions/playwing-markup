@@ -34,59 +34,64 @@
         <section class="hero">
             <div class="container">
                 <div class="row mb-5 pb-lg-5 pb-2">
-                    <div class="col-lg-6 px-lg-0 px-4 pt-lg-5 pt-md-4 pt-15 order-lg-0 order-1">
-                        <h1 class="text-primary mb-3 mx-sm-0 mx-4"><span class="text-danger">We’re sorry</span> to <span class="d-block">see you go <img src="img/heart.svg" alt="Heart"></span>
+                    <div class="col-lg-6 pt-lg-5 pt-md-4 pt-15 order-lg-0 order-1">
+                        <h1 class="text-primary mb-3 mx-sm-0 mx-5"><span class="text-danger">We’re sorry</span> to <span class="d-block">see you go <img src="img/heart.svg" alt="Heart"></span>
                         </h1>
                         <p class="mb-4 d-lg-block d-none">We'll always remember the good times that we had.</p>
                         <p class="fw-medium mb-lg-4 mb-3 pb-1">If you want to Unsubscribe to our service please let us know your Mobile <br> Phone Number and we will send you an SMS (don’t worry you won’t be <br> charge for this SMS)
                         </p>
 
-                        <div class="row mb-lg-4 mb-2">
-                            <div class="col-lg-6">
-                                <div class="grecaptcha mb-3"></div>
+                        <form class="needs-validation" novalidate>
+                            <div class="row mb-lg-4 mb-2">
+                                <div class="col-lg-6">
+                                    <div class="grecaptcha mb-3"></div>
 
-                                <div class="bg-white rounded-1 shadow p-1">
-                                    <div class="input-group">
-                                        <span class="input-group-text" id="basic-email">
-                                            <icon class="icon icon-mail fs-6"></icon>
-                                        </span>
-                                        <input type="text" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
+                                    <div class="bg-white rounded-1 shadow p-1">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-email">
+                                                <icon class="icon icon-mail fs-6"></icon>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-lg-3 col-5 pe-1">
-                                <div class="bg-white rounded-1 shadow p-1">
-                                    <div class="input-group">
-                                        <span class="input-group-text" id="basic-country">
-                                            <icon class="icon icon-flag fs-6"></icon>
-                                        </span>
-                                        <select class="selectpicker form-control" title="Country Code" id="basic-country">
-                                            <option>SPAIN (+34)</option>
-                                            <option>SPAIN (+34)</option>
-                                            <option>SPAIN (+34)</option>
-                                            <option>SPAIN (+34)</option>
-                                            <option>SPAIN (+34)</option>
-                                        </select>
+                            <div class="row">
+                                <div class="col-lg-3 col-5 pe-1">
+                                    <div class="bg-white rounded-1 shadow p-1">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-country">
+                                                <icon class="icon icon-flag fs-6"></icon>
+                                            </span>
+                                            <select class="selectpicker form-control" title="Country Code" id="basic-country">
+                                                <option>SPAIN (+34)</option>
+                                                <option>SPAIN (+34)</option>
+                                                <option>SPAIN (+34)</option>
+                                                <option>SPAIN (+34)</option>
+                                                <option>SPAIN (+34)</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-5 col-7 ps-1">
-                                <div class="bg-white rounded-1 shadow p-1">
-                                    <div class="input-group">
-                                        <span class="input-group-text" id="basic-phone">
-                                    <icon class="icon icon-mobile fs-6"></icon>
-                                </span>
-                                        <input type="text" class="form-control" placeholder="Enter your phone number" aria-label="Phone number" aria-describedby="basic-phone">
+                                <div class="col-lg-5 col-7 ps-1">
+                                    <div class="bg-white rounded-1 shadow p-1">
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="basic-phone">
+                                                <icon class="icon icon-mobile fs-6"></icon>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Enter your phone number" aria-label="Phone number" aria-describedby="basic-phone">
+                                            <div class="invalid-feedback">
+                                                Invalid number*
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-12 mt-lg-0 mt-4 text-lg-start text-center">
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#requestAcceptedModal">Send SMS</button>
+                                </div>
                             </div>
-                            <div class="col-lg-4 col-12 mt-lg-0 mt-4 text-lg-start text-center">
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#requestAcceptedModal">Send SMS</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                     <div class="col-lg-6 order-lg-1 order-0 px-4">
                         <img src="img/hero-img.png" alt="We’re sorry to see you go" class="hero-img-decor">

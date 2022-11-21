@@ -11412,6 +11412,15 @@ select.selectpicker {
   margin-bottom: 3.75rem;
 }
 
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1240px;
+  }
+}
 .fw-medium {
   font-weight: 500;
 }
@@ -11620,7 +11629,7 @@ p {
 
 .contact-form-decor {
   position: absolute;
-  top: 2.5rem;
+  top: 8rem;
   right: -0.625rem;
   background-image: url("../img/contact-form-decor.svg");
   background-size: contain;
