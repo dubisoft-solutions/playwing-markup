@@ -114,3 +114,9 @@ textarea {
         border-radius: .688rem!important;
     }
 }
+
+@include media-breakpoint-down(md) {
+    .pt-15 {
+        padding-top: 10.5rem;
+    }
+}

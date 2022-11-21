@@ -1,0 +1,28 @@
+.modal-body {
+    padding: .5rem 3.75rem 4.25rem 3.75rem;
+    z-index: 0;
+}
+
+.close-button {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+@include media-breakpoint-down(md) {
+    .modal-content {
+        border-radius: .688rem;
+    }
+    .modal-dialog {
+        margin-top: 1.875rem;
+        padding: 1.875rem;
+    }
+    .modal-body {
+        padding: 1.25rem 1rem;
+    }
+    .close-button {
+        position: absolute;
+        top: -3.75rem;
+        right: 0;
+    }
+}
