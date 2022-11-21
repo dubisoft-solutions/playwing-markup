@@ -3,64 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test project</title>
+    <title>Playwing</title>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body class="index">
-
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+<body class="index position-relative">
+    <main>
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand d-block" href="./index.html">
+                        <img src="img/logo.svg" class="navbar-brand-img" alt="logo">
+                    </a>
+                    <div class="dropdown">
+                        <button class="btn shadow-sm dropdown-toggle" type="button" id="dropdownMenuLanguage" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-1"><img src="img/united-kingdom.svg" alt="United Kingdom"></span>ENG
+                            </button>
+                        <ul class="dropdown-menu border-0 w-100 dropdown-menu-end" aria-labelledby="dropdownMenuLanguage">
+                            <li><a class="dropdown-item text-start" href="#"><span><img src="img/united-kingdom.svg" alt="United Kingdom"></span> ENG</a></li>
+                            <li><a class="dropdown-item text-start" href="#"><span><img src="img/united-kingdom.svg" alt="United Kingdom"></span> ENG</a></li>
+                            <li><a class="dropdown-item text-start" href="#"><span><img src="img/united-kingdom.svg" alt="United Kingdom"></span> ENG</a></li>
+                            <li><a class="dropdown-item text-start" href="#"><span><img src="img/united-kingdom.svg" alt="United Kingdom"></span> ENG</a></li>
                         </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Main section -->
+        <section class="hero">
+            <div class="container">
+                <div class="row mb-5 pb-lg-5 pb-2">
+                    <div class="col-lg-6 px-lg-0 px-4 pt-lg-5 pt-md-4 pt-15 order-lg-0 order-1">
+                        <h1 class="text-primary mb-3 mx-sm-0 mx-4"><span class="text-danger">We’re sorry</span> to <span class="d-block">see you go <img src="img/heart.svg" alt="Heart"></span>
+                        </h1>
+                        <p class="mb-4 d-lg-block d-none">We'll always remember the good times that we had.</p>
+                        <p class="fw-medium mb-lg-4 mb-3 pb-1">If you want to Unsubscribe to our service please let us know your Mobile <br> Phone Number and we will send you an SMS (don’t worry you won’t be <br> charge for this SMS)
+                        </p>
+
+                        <div class="row mb-lg-4 mb-2">
+                            <div class="col-lg-6">
+                                <div class="bg-white rounded-1 shadow p-1">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-email">
+                                    <icon class="icon icon-mail fs-6"></icon>
+                                </span>
+                                        <input type="text" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-5 pe-1">
+                                <div class="bg-white rounded-1 shadow p-1">
+                                    <div class="form-group">
+                                        <select class="selectpicker form-control" title="Country Code">
+                                            <option>SPAIN (+34)</option>
+                                            <option>SPAIN (+34)</option>
+                                            <option>SPAIN (+34)</option>
+                                            <option>SPAIN (+34)</option>
+                                            <option>SPAIN (+34)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-7 ps-1">
+                                <div class="bg-white rounded-1 shadow p-1">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-phone">
+                                    <icon class="icon icon-mobile fs-6"></icon>
+                                </span>
+                                        <input type="text" class="form-control" placeholder="Enter your phone number" aria-label="Phone number" aria-describedby="basic-phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12 mt-lg-0 mt-4 text-lg-start text-center">
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#requestAcceptedModal">Send SMS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 order-0 px-4">
+                        <img src="img/hero-img.png" alt="We’re sorry to see you go" class="hero-img-decor">
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </section>
 
-    <!-- Main section -->
-    <section class="container">
-        <div class="row">
-            <div class="col-12">
-                <h3>Hello from bootstrap</h3>
+        <section class="steps">
+            <div class="container px-0">
+                <div class="row align-items-center mb-5 pb-2 mx-0">
+                    <div class="col-lg-4 text-lg-start text-center">
+                        <h2 class="text-primary text-center d-lg-none d-block mb-0">As easy as <span class="text-danger">This!</span></h2>
+                        <img src="img/hero-img-two.png" alt="As easy as This!" class="hero-img-two-size mb-lg-0 mb-2">
+                        <p class="fw-bold fs-6 text-center mb-lg-0 mb-4">
+                            You can choose between more than <br> 275 games divided into 9 categories.
+                        </p>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1 pe-md-3 pe-0">
+                        <h2 class="text-primary d-lg-block d-none mb-4">As easy as <span class="text-danger">This!</span></h2>
+
+                        <div class="steps-slider">
+                            <div class="slide position-relative">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="w-56 h-56 bg-danger-gradient rounded-circle d-flex justify-content-center align-items-center mb-lg-4 mb-3">
+                                            <icon class="icon icon-mail text-white d-grid fs-4"></icon>
+                                        </div>
+                                        <div class="divider-decor pb-lg-4 pb-3"></div>
+                                        <h5 class="card-title">Enter x number and e-mail </h5>
+                                        <p class="card-text">You will receive an email from the helpdesk with a confirmation, please contact us in the same thread.</p>
+                                    </div>
+                                </div>
+                                <div class="number-decor">
+                                    1
+                                </div>
+                            </div>
+                            <div class="slide position-relative">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="w-56 h-56 bg-danger-gradient rounded-circle d-flex justify-content-center align-items-center mb-lg-4 mb-3">
+                                            <icon class="icon icon-message text-white d-grid fs-4"></icon>
+                                        </div>
+                                        <div class="divider-decor pb-lg-4 pb-3"></div>
+                                        <h5 class="card-title">SMS</h5>
+                                        <p class="card-text">You'll receive an SMS with the unsubscribe instructions.</p>
+                                    </div>
+                                </div>
+                                <div class="number-decor">
+                                    2
+                                </div>
+                            </div>
+                            <div class="slide position-relative">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="w-56 h-56 bg-danger-gradient rounded-circle d-flex justify-content-center align-items-center mb-lg-4 mb-3">
+                                            <icon class="icon icon-happy text-white d-grid fs-4"></icon>
+                                        </div>
+                                        <div class="divider-decor pb-lg-4 pb-3"></div>
+                                        <h5 class="card-title">Congrats!</h5>
+                                        <p class="card-text">Your request has been approved.</p>
+                                    </div>
+                                </div>
+                                <div class="number-decor">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer mt-auto pb-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-9">
+                        <p class="text-secondary fs-7 mb-0">©Playwing 2022 All the rights reserved</p>
+                    </div>
+                    <div class="col-3 text-end">
+                        <button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#contactUsModal">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Request accepted Modal -->
+    <div class="modal fade" id="requestAcceptedModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="requestAcceptedModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered position-relative">
+            <div class="modal-content">
+                <div class="pt-3 pe-md-3 pe-0 ms-auto close-button">
+                    <div class="w-31 h-31 rounded-circle bg-white d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-11 col-11">
+                            <div class="w-79 h-79 rounded-circle bg-white filter-shadow d-flex justify-content-center align-items-center mx-auto mb-4">
+                                <icon class="icon icon-check text-success fs-3 d-grid"></icon>
+                            </div>
+                            <h3 class="fw-bold fs-3 text-primary mb-3"><span class="text-danger">Request</span> accepted</h3>
+                            <p class="fw-medium mb-lg-0 mb-2">Thank you for your request, we just sent you an email and an SMS.</p>
+                            <p class="fw-medium mb-5">Please connect via 3G on your mobile device and click on the URL.</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    
-    <!-- footer -->
-    <footer>
-        
-    </footer>
+    </div>
+
+    <!-- Contact us Modal -->
+    <div class="modal fade" id="contactUsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered position-relative">
+            <div class="modal-content">
+                <div class="pt-3 pe-md-3 pe-0 ms-auto close-button">
+                    <div class="w-31 h-31 rounded-circle bg-white d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5">
+                            <h3 class="fw-bold fs-2 text-primary mb-lg-3 mb-4">Let's<span class="text-danger d-lg-inline d-block">Talk!</span></h3>
+                            <img src="img/contact-img.png" alt="Let's Talk!" class="contact-form-size">
+                        </div>
+                        <div class="col-lg-7 position-relative align-self-center">
+                            <div class="bg-white rounded-2 pt-lg-5 pt-4 pb-lg-3 pb-3 px-lg-2 px-1">
+                                <p class="mb-3 px-lg-5 px-4"><span class="text-danger">How can we help?</span> Please get in touch and our expert <br> support team will answer all your questions</p>
+                                <div class="divider-decor pb-4 px-lg-5 px-4"></div>
+                                <form class="striped-form">
+                                    <div class="px-lg-5 px-4">
+                                        <div class="mb-lg-3 mb-2">
+                                            <label for="inputName" class="form-label">Name *</label>
+                                            <input type="text" class="form-control" id="inputName">
+                                        </div>
+                                        <div class="mb-lg-3 mb-2">
+                                            <label for="inputEmail" class="form-label">Email address *</label>
+                                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                                        </div>
+
+                                        <div class="mb-lg-4 mb-3">
+                                            <label for="messageTextarea" class="form-label">Message</label>
+                                            <textarea class="form-control" id="messageTextarea" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-danger">Let’s talk!</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="contact-form-decor"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="js/main.js"></script>
