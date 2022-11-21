@@ -24,15 +24,15 @@ function initStepsSlider() {
 
         responsive: {
             0: {
-                items: 1.4,
+                items: 2.2,
                 edgePadding: 0,
             },
             576: {
-                items: 1.4,
+                items: 3,
                 edgePadding: 0,
             },
             768: {
-                items: 2.4,
+                items: 3,
                 edgePadding: 0,
             },
             992: {

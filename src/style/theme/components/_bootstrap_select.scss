@@ -4,10 +4,36 @@
     .dropdown-toggle.btn-light {
         border: none;
         background-color: $light-248;
-        padding: .5rem;
+        padding: .75rem .5rem;
+        font-size: .75rem;
+        line-height: 1.5;
         &::placeholder {
             font-style: italic;
             color: $silver;
+            @include media-breakpoint-down(md) {
+                font-size: .688rem;
+            }
+        }
+        &:focus {
+            outline: none!important;
+            outline-offset: none!important;
+            box-shadow: none;
+        }
+        @include media-breakpoint-down(md) {
+            padding: .625rem .5rem;
+        }
+        &.show,
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $light-248!important;
+        }
+    }
+    .dropdown-toggle {
+        &.show {
+            &:after {
+                transform: rotate(180deg);
+            }
         }
     }
     .dropdown-menu {
@@ -16,12 +42,29 @@
         color: $blue-152;
         background-color: $light-248;
         border: none;
+        box-shadow: $box-shadow-sm;
         padding: .75rem 0;
         .dropdown-item {
-            &.active {
+            &.active,
+            &:hover {
                 color: $white;
                 background-color: $blue-176;
             }
         }
     }
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder {
+    font-size: 1rem!important;
+    font-style: italic;
+    color: $silver;
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    font-size: .75rem!important;
+    font-style: italic;
+    color: $silver;
 }

@@ -1,11 +1,12 @@
 .navbar {
     background: linear-gradient(180deg, #F5F4F0 0%, rgba(245, 244, 240, 0) 157.69%);
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         background: none;
+        padding: 0;
     }
     .navbar-brand-img {
         width: 7.188rem;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             width: 3.875rem;
         }
     }
