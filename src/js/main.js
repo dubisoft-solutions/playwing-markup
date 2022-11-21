@@ -3,9 +3,13 @@
 //= ../../node_modules/tiny-slider/dist/min/tiny-slider.js
 //= ../../node_modules/bootstrap-select/dist/js/bootstrap-select.min.js
 
+//= https://www.google.com/recaptcha/api.js
+
+
 $(function() {
     $('.selectpicker').selectpicker();
     initStepsSlider();
+    initRecaptcha('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', ".grecaptcha");
 });
 
 function initStepsSlider() {
@@ -42,4 +46,16 @@ function initStepsSlider() {
     });
 
     console.log('steps slider initialized')
+}
+
+function initRecaptcha(sitekey, containerSelector) {
+    const recaptchaContainers = document.querySelectorAll(containerSelector);
+    recaptchaContainers.forEach(recaptchaContainer => {
+        // If reCAPTCHA is still loading, grecaptcha will be undefined.
+        grecaptcha.ready(function() {
+            grecaptcha.render(recaptchaContainer, {
+                sitekey: sitekey
+            });
+        });
+    })
 }
