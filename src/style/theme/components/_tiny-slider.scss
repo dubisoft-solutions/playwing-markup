@@ -1,1 +1,7 @@
 @import "tiny-slider/src/tiny-slider.scss";
+.steps-slider {
+    display: flex;
+    .slide {
+        margin-bottom: 3.75rem;
+    }
+}

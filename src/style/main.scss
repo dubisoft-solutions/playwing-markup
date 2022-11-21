@@ -87,13 +87,6 @@
     z-index: -1;
 }
 
-.steps-slider {
-    display: flex;
-    .slide {
-        margin-bottom: 3.75rem;
-    }
-}
-
 @include media-breakpoint-down(md) {
     .hero-img-two-size {
         width: 15rem;
