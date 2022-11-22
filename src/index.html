@@ -22,43 +22,49 @@
                                 <div class="col-lg-6">
                                     <div class="grecaptcha mb-3"></div>
 
-                                    <div class="input-group">
-                                        <span class="input-group-text" id="basic-email">
+                                    <div class="bg-white rounded-1 shadow p-1">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-email">
                                                 <icon class="icon icon-mail fs-6"></icon>
                                             </span>
-                                        <input type="text" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
+                                            <input type="text" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-lg-3 col-5 pe-1">
-                                    <div class="input-group">
-                                        <span class="input-group-text" id="basic-country">
+                                    <div class="bg-white rounded-1 shadow p-1">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-country">
                                                 <icon class="icon icon-flag fs-6"></icon>
                                             </span>
-                                        <select class="selectpicker form-control" title="Country Code" id="basic-country">
+                                            <select class="selectpicker form-control" title="Country Code" id="basic-country">
                                                 <option>SPAIN (+34)</option>
                                                 <option>SPAIN (+34)</option>
                                                 <option>SPAIN (+34)</option>
                                                 <option>SPAIN (+34)</option>
                                                 <option>SPAIN (+34)</option>
                                             </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-7 ps-1">
-                                    <div class="input-group has-validation">
-                                        <span class="input-group-text" id="basic-phone">
+                                    <div class="bg-white rounded-1 shadow p-1">
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="basic-phone">
                                                 <icon class="icon icon-mobile fs-6"></icon>
                                             </span>
-                                        <input type="text" id="validatePhone" class="form-control" placeholder="Enter your phone number" aria-label="Phone number" aria-describedby="basic-phone" required>
-                                        <div id="validatePhone" class="invalid-feedback">
-                                            Invalid number*
+                                            <input type="text" class="form-control" placeholder="Enter your phone number" aria-label="Phone number" aria-describedby="basic-phone">
+                                            <div class="invalid-feedback">
+                                                Invalid number*
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-12 mt-lg-0 mt-4 text-lg-start text-center">
-                                    <button type="submit" class="btn btn-danger">Send SMS</button>
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#requestAcceptedModal">Send SMS</button>
                                 </div>
                             </div>
                         </form>
