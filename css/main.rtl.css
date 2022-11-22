@@ -11563,6 +11563,7 @@ p {
   background-position: bottom;
   background-repeat: no-repeat;
   background-image: url("../img/wave.svg");
+  background-size: contain;
   bottom: 0;
   z-index: -1;
 }

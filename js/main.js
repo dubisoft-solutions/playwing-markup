@@ -25,6 +25,7 @@ $(function() {
     $('.selectpicker').selectpicker();
     initStepsSlider();
     initRecaptcha('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', ".grecaptcha");
+    initFormValidation();
 });
 
 function initStepsSlider() {
@@ -72,6 +73,20 @@ function initRecaptcha(sitekey, containerSelector) {
                 sitekey: sitekey
             });
         });
+    })
+}
+
+function initFormValidation() {
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
     })
 }
 //# sourceMappingURL=main.js.map
