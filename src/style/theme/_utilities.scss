@@ -1,12 +1,12 @@
-@include media-breakpoint-up(xl) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1240px;
-    }
-}
+// @include media-breakpoint-up(xl) {
+//     .container,
+//     .container-lg,
+//     .container-md,
+//     .container-sm,
+//     .container-xl {
+//         max-width: 1240px;
+//     }
+// }
 
 .fw-medium {
     font-weight: $font-weight-medium;
