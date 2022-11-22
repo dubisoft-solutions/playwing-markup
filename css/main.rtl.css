@@ -2350,7 +2350,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.875em;
+  font-size: 0.75rem;
   color: #32E28E;
 }
 
@@ -2440,7 +2440,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.875em;
+  font-size: 0.75rem;
   color: #FF5346;
 }
 
@@ -10614,7 +10614,12 @@ textarea.form-control-lg {
   }
 }
 .form-control {
-  border: none;
+  border-radius: 0.438rem !important;
+  border: 5px solid #FFFFFF !important;
+  background-color: #F8F8F8 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-right: 0 !important;
 }
 .form-control::placeholder {
   font-style: italic;
@@ -10627,6 +10632,12 @@ textarea.form-control-lg {
 
 .input-group-text {
   position: relative;
+  border-radius: 0.438rem !important;
+  border: 5px solid #FFFFFF !important;
+  background-color: #F8F8F8 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-left: 0 !important;
 }
 .input-group-text::after {
   content: "";
@@ -10651,6 +10662,15 @@ textarea.form-control-lg {
   border-radius: 0;
 }
 .striped-form .form-control:focus {
+  box-shadow: none;
+}
+
+.invalid-feedback {
+  font-weight: 500;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
   box-shadow: none;
 }
 
@@ -11199,7 +11219,6 @@ select.selectpicker {
   background-color: #F8F8F8;
   padding: 0.75rem 0.5rem;
   font-size: 0.75rem;
-  line-height: 1.5;
 }
 .bootstrap-select .dropdown-toggle.btn-light::placeholder {
   font-style: italic;
