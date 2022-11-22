@@ -1,5 +1,10 @@
 .form-control {
-    border: none;
+    border-radius: $border-radius!important;
+    border: 5px solid $white!important;
+    background-color: $light-248!important;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    border-left: 0!important;
     &::placeholder {
         font-style: italic;
         color: $silver;
@@ -12,6 +17,12 @@
 
 .input-group-text {
     position: relative;
+    border-radius: $border-radius!important;
+    border: 5px solid $white!important;
+    background-color: $light-248!important;
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    border-right: 0!important;
     &::after {
         content: "";
         display: inline;
@@ -39,6 +50,15 @@
             box-shadow: none;
         }
     }
+}
+
+.invalid-feedback {
+    font-weight: 500;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+    box-shadow: none;
 }
 
 @include media-breakpoint-down(md) {
