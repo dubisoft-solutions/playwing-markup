@@ -88,7 +88,7 @@
 
 .contact-form-decor {
     position: absolute;
-    top: 8rem;
+    bottom: -1.375rem;
     left: -.625rem;
     background-image: url("../img/contact-form-decor.svg");
     background-size: contain;
@@ -114,8 +114,8 @@
         right: 0;
     }
     .contact-form-decor {
-        top: 17.175rem;
-        left: -.2rem;
+        bottom: -.625rem;
+        left: .125rem;
         height: 14rem;
     }
 }
