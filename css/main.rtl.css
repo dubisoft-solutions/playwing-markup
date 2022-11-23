@@ -688,17 +688,17 @@ progress {
 }
 @media (min-width: 1548px) {
   .container-xxxl, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1488px;
+    max-width: 1375px;
   }
 }
 @media (min-width: 1920px) {
   .container-xxxxl, .container-xxxl, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1848px;
+    max-width: 1747px;
   }
 }
 @media (min-width: 2560px) {
   .container-xxxxxl, .container-xxxxl, .container-xxxl, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 2398px;
+    max-width: 2387px;
   }
 }
 .row {
@@ -13251,7 +13251,7 @@ textarea.form-control-lg {
     font-size: 0.688rem;
   }
 }
-@media (min-width: 1548px) {
+@media (min-width: 1920px) {
   .btn-link {
     font-size: 1.25rem;
   }
@@ -13269,7 +13269,7 @@ textarea.form-control-lg {
   font-style: italic;
   color: #AEAEAE;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .form-control::placeholder {
     font-size: 0.875rem;
   }
@@ -13278,7 +13278,7 @@ textarea.form-control-lg {
   box-shadow: none;
   border-color: transparent;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .form-control {
     font-size: 0.875rem;
     padding: 0.5rem 0.5rem;
@@ -13305,7 +13305,7 @@ textarea.form-control-lg {
   top: 0.438rem;
   left: 0;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .input-group-text {
     padding: 0.5rem 0.5rem;
   }
@@ -13364,7 +13364,7 @@ textarea.form-control-lg {
     font-size: 0.625rem;
   }
 }
-@media (min-width: 1548px) {
+@media (min-width: 1920px) {
   .card .card-body .card-title {
     font-size: 1.625rem;
   }
@@ -13380,7 +13380,7 @@ textarea.form-control-lg {
     line-height: 0.75rem;
   }
 }
-@media (min-width: 1548px) {
+@media (min-width: 1920px) {
   .card .card-body .card-text {
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -13409,7 +13409,7 @@ textarea.form-control-lg {
     width: 3.875rem;
   }
 }
-@media (min-width: 1548px) {
+@media (min-width: 1920px) {
   .navbar .navbar-brand-img {
     font-size: 10rem;
   }
@@ -13422,13 +13422,17 @@ textarea.form-control-lg {
   border-radius: 0.438rem;
   padding: 0.375rem 0.625rem;
   border: none;
-  font-size: 1rem;
-  padding: 0.5rem;
 }
 @media (max-width: 767.98px) {
   .dropdown-toggle {
     font-size: 0.5rem;
     padding: 0.25rem 0.5rem;
+  }
+}
+@media (min-width: 1920px) {
+  .dropdown-toggle {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
 .dropdown-toggle:focus, .dropdown-toggle:active, .dropdown-toggle.show, .dropdown-toggle:hover {
@@ -13455,7 +13459,7 @@ textarea.form-control-lg {
   color: #FFFFFF;
   background-color: #657a80;
 }
-@media (min-width: 1548px) {
+@media (min-width: 1920px) {
   .dropdown-menu .dropdown-item {
     font-size: 1rem;
   }
@@ -14226,7 +14230,7 @@ textarea {
     padding-top: 0;
   }
 }
-@media (min-width: 1548px) {
+@media (min-width: 1920px) {
   .fs-6 {
     font-size: 1.5rem !important;
   }
@@ -14249,7 +14253,7 @@ p {
     font-size: 0.75rem;
   }
 }
-@media (min-width: 1548px) {
+@media (min-width: 1920px) {
   p {
     font-size: 1.25rem !important;
   }
@@ -14301,7 +14305,7 @@ p {
     right: 0;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .hero-img-decor {
     width: 85%;
   }
@@ -14315,7 +14319,7 @@ p {
     width: 75%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .hero-img-two-size {
     width: 85%;
   }
