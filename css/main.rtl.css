@@ -8797,30 +8797,34 @@ textarea.form-control-lg {
 }
 
 .fs-4 {
-  font-size: calc(1.3125rem + 0.75vw) !important;
+  font-size: calc(1.3938rem + 1.7256vw) !important;
 }
 
 .fs-5 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: calc(1.3125rem + 0.75vw) !important;
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: calc(1.275rem + 0.3vw) !important;
 }
 
 .fs-7 {
-  font-size: 0.938rem !important;
+  font-size: 1rem !important;
 }
 
 .fs-8 {
-  font-size: 0.875rem !important;
+  font-size: 0.938rem !important;
 }
 
 .fs-9 {
-  font-size: 0.813rem !important;
+  font-size: 0.875rem !important;
 }
 
 .fs-10 {
+  font-size: 0.813rem !important;
+}
+
+.fs-11 {
   font-size: 0.75rem !important;
 }
 
@@ -13153,9 +13157,12 @@ textarea.form-control-lg {
     font-size: 3.438rem !important;
   }
   .fs-4 {
-    font-size: 1.875rem !important;
+    font-size: 2.688rem !important;
   }
   .fs-5 {
+    font-size: 1.875rem !important;
+  }
+  .fs-6 {
     font-size: 1.5rem !important;
   }
 }
@@ -13317,9 +13324,9 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 .striped-form .form-control {
-  background-color: transparent;
-  border-bottom: 1px solid #183258;
-  border-radius: 0;
+  background-color: transparent !important;
+  border-bottom: 1px solid #183258 !important;
+  border-radius: 0 !important;
 }
 .striped-form .form-control:focus {
   box-shadow: none;
@@ -13904,8 +13911,10 @@ select.selectpicker {
 .bootstrap-select .dropdown-toggle.btn-light {
   border: none;
   background-color: #F8F8F8;
-  padding: 0.75rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   font-size: 0.75rem;
+  color: #657998;
+  line-height: 2;
 }
 .bootstrap-select .dropdown-toggle.btn-light::placeholder {
   font-style: italic;
@@ -13935,11 +13944,14 @@ select.selectpicker {
 .bootstrap-select .dropdown-menu {
   font-weight: 500;
   font-size: 0.75rem;
-  color: #657998;
+  color: #657998 !important;
   background-color: #F8F8F8;
   border: none;
   box-shadow: 0px 3.01622px 3.01622px rgba(0, 0, 0, 0.1);
   padding: 0.75rem 0;
+}
+.bootstrap-select .dropdown-menu .dropdown-item {
+  color: #657998 !important;
 }
 .bootstrap-select .dropdown-menu .dropdown-item.active, .bootstrap-select .dropdown-menu .dropdown-item:hover {
   color: #FFFFFF;
@@ -14197,10 +14209,13 @@ textarea {
   .fs-3 {
     font-size: 1.688rem !important;
   }
-  .fs-6 {
-    font-size: 0.75rem !important;
+  .fs-4 {
+    font-size: 1.625rem !important;
   }
   .fs-7 {
+    font-size: 0.75rem !important;
+  }
+  .fs-8 {
     font-size: 0.75rem !important;
   }
   .w-56 {
@@ -14231,10 +14246,10 @@ textarea {
   }
 }
 @media (min-width: 1920px) {
-  .fs-6 {
+  .fs-7 {
     font-size: 1.5rem !important;
   }
-  .fs-7 {
+  .fs-8 {
     font-size: 1.25rem !important;
   }
 }
@@ -14355,7 +14370,7 @@ p {
 
 .contact-form-decor {
   position: absolute;
-  top: 8rem;
+  bottom: -1.375rem;
   right: -0.625rem;
   background-image: url("../img/contact-form-decor.svg");
   background-size: contain;
@@ -14380,8 +14395,8 @@ p {
     left: 0;
   }
   .contact-form-decor {
-    top: 17.175rem;
-    right: -0.2rem;
+    bottom: -0.625rem;
+    right: 0.125rem;
     height: 14rem;
   }
 }
