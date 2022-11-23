@@ -7,7 +7,7 @@
             @include media-breakpoint-down(md) {
                 font-size: .625rem;
             }
-            @include media-breakpoint-up(xxl) {
+            @include media-breakpoint-up(xxxl) {
                 font-size: 1.625rem;
             }
         }
@@ -19,7 +19,7 @@
                 font-size: .5rem;
                 line-height: .75rem;
             }
-            @include media-breakpoint-up(xxl) {
+            @include media-breakpoint-up(xxxl) {
                 font-size: 1.25rem;
                 line-height: 1.5rem;
             }
