@@ -73,9 +73,9 @@ $dropdown-color: $black-65;
 $dropdown-link-color: $black-65;
 $dropdown-border-radius: $border-radius;
 // break points
-$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1548px, xxxl: 1920px, xxxxl: 2560px);
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px, xxxl: 1548px, xxxl: 1920px, xxxxl: 2560px);
 // containers
-$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1488px, xxxl: 1848px, xxxxl: 2398px);
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1280px, xxxl: 1488px, xxxl: 1848px, xxxxl: 2398px);
 // form-control
 $input-font-size: .75rem;
 $input-font-weight: $font-weight-medium;
