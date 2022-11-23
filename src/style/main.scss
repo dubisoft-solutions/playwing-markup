@@ -43,7 +43,7 @@
         right: 0;
         left: 0;
     }
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(xxxxl) {
         width: 85%;
     }
 }
@@ -53,7 +53,7 @@
     @include media-breakpoint-down(lg) {
         width: 75%;
     }
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(xxxxl) {
         width: 85%;
     }
 }
