@@ -4,8 +4,10 @@
     .dropdown-toggle.btn-light {
         border: none;
         background-color: $light-248;
-        padding: .75rem .5rem;
+        padding: .5rem .5rem;
         font-size: .75rem;
+        color: $blue-152;
+        line-height: 2;
         &::placeholder {
             font-style: italic;
             color: $silver;
@@ -38,12 +40,13 @@
     .dropdown-menu {
         font-weight: 500;
         font-size: .75rem;
-        color: $blue-152;
+        color: $blue-152!important;
         background-color: $light-248;
         border: none;
         box-shadow: $box-shadow-sm;
         padding: .75rem 0;
         .dropdown-item {
+            color: $blue-152!important;
             &.active,
             &:hover {
                 color: $white;

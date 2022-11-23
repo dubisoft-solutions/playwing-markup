@@ -53,9 +53,9 @@
         margin-bottom: 0;
     }
     .form-control {
-        background-color: transparent;
-        border-bottom: 1px solid $blue-88;
-        border-radius: 0;
+        background-color: transparent!important;
+        border-bottom: 1px solid $blue-88!important;
+        border-radius: 0!important;
         &:focus {
             box-shadow: none;
         }
