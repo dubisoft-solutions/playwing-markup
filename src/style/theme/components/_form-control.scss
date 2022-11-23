@@ -8,10 +8,17 @@
     &::placeholder {
         font-style: italic;
         color: $silver;
+        @include media-breakpoint-up(xxl) {
+            font-size: .875rem;
+        }
     }
     &:focus {
         box-shadow: none;
         border-color: transparent;
+    }
+    @include media-breakpoint-up(xxl) {
+        font-size: .875rem;
+        padding: .5rem .5rem;
     }
 }
 
@@ -33,6 +40,9 @@
         position: absolute;
         top: .438rem;
         right: 0;
+    }
+    @include media-breakpoint-up(xxl) {
+        padding: .5rem .5rem;
     }
 }
 
@@ -62,12 +72,8 @@
 }
 
 @include media-breakpoint-down(md) {
-    .input-group-text {
-        padding: .565rem .5rem;
-    }
     .form-control {
         border: none;
-        padding: .565rem .5rem;
         &::placeholder {
             font-size: .688rem;
         }

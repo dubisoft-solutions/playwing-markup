@@ -40,7 +40,6 @@ $headings-font-weight: bold;
 $headings-line-height: 1.125;
 $font-weight-medium: 500;
 $font-sizes: ( 1: 6.25rem, 2: 4.375rem, 3: 3.438rem, 4: 1.875rem, 5: 1.5rem, 6: 1rem, 7: .938rem, 8: .875rem, 9: .813rem, 10: .75rem);
-$border-radius-sm: .438rem;
 // box-shadow
 $box-shadow: 0px 15.6456px 20.8608px -1.9557px rgba(3, 9, 50, 0.04) !default;
 $box-shadow-sm: 0px 3.01622px 3.01622px rgba(0, 0, 0, 0.1) !default;
@@ -81,7 +80,7 @@ $input-font-size: .75rem;
 $input-font-weight: $font-weight-medium;
 $input-color: $blue-152;
 $input-bg: $light-248;
-$input-padding-y: .43rem;
+$input-padding-y: .5rem;
 $input-padding-x: .5rem;
 $input-group-addon-color: $light-gray;
 $input-group-addon-border-color: $light-248;

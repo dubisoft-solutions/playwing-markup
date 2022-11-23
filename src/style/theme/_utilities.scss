@@ -1,13 +1,3 @@
-// @include media-breakpoint-up(xl) {
-//     .container,
-//     .container-lg,
-//     .container-md,
-//     .container-sm,
-//     .container-xl {
-//         max-width: 1240px;
-//     }
-// }
-
 .fw-medium {
     font-weight: $font-weight-medium;
 }
@@ -81,15 +71,6 @@ textarea {
 }
 
 @include media-breakpoint-down(md) {
-    h1 {
-        font-size: 2.313rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: .75rem;
-    }
     .fs-2 {
         font-size: 2rem!important;
     }
@@ -127,6 +108,15 @@ textarea {
 
 @include media-breakpoint-down(md) {
     .pt-15 {
-        padding-top: 10.5rem;
+        padding-top: 0;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .fs-6 {
+        font-size: 1.5rem!important;
+    }
+    .fs-7 {
+        font-size: 1.25rem!important;
     }
 }

@@ -1,3 +1,21 @@
 p {
     color: $blue-88;
 }
+
+@include media-breakpoint-down(md) {
+    h1 {
+        font-size: 2.313rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: .75rem;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    p {
+        font-size: 1.25rem!important;
+    }
+}

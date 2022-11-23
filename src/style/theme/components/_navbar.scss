@@ -9,5 +9,8 @@
         @include media-breakpoint-down(md) {
             width: 3.875rem;
         }
+        @include media-breakpoint-up(xxl) {
+            font-size: 10rem;
+        }
     }
 }
