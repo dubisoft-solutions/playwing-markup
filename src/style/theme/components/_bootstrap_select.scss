@@ -49,7 +49,7 @@
             color: $blue-152!important;
             &.active,
             &:hover {
-                color: $white;
+                color: $white!important;
                 background-color: $blue-176;
             }
         }
