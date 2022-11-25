@@ -14429,6 +14429,21 @@ p {
   z-index: -1;
 }
 
+.recaptcha-style {
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  transform-origin: 100% 0;
+  -webkit-transform-origin: 100% 0;
+  height: 8vh;
+}
+@media (max-width: 767.98px) {
+  .recaptcha-style {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    height: 7vh;
+  }
+}
+
 @media (max-width: 767.98px) {
   .number-decor {
     bottom: -2.5rem;
