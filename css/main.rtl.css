@@ -14033,11 +14033,6 @@ select.selectpicker {
   background: #FF574A;
   border-radius: 0.25rem;
 }
-@media (max-width: 767.98px) {
-  .bootstrap-select > .dropdown-menu {
-    padding: 0.5rem 0;
-  }
-}
 
 .bootstrap-select > .dropdown-toggle.bs-placeholder {
   font-size: 1rem !important;
