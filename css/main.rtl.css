@@ -13476,6 +13476,12 @@ textarea.form-control-lg {
   background-color: #657a80;
   border-radius: 0.125rem;
 }
+@media (max-width: 767.98px) {
+  .dropdown-menu.dropdown-style ul .dropdown-item {
+    font-size: 0.625rem !important;
+    padding: 0.25rem 0.5rem;
+  }
+}
 @media (min-width: 1920px) {
   .dropdown-menu.dropdown-style ul .dropdown-item {
     font-size: 1rem;
@@ -13484,6 +13490,11 @@ textarea.form-control-lg {
 .dropdown-menu.dropdown-style ul::-webkit-scrollbar {
   width: 0.563rem;
 }
+@media (max-width: 767.98px) {
+  .dropdown-menu.dropdown-style ul::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+}
 .dropdown-menu.dropdown-style ul::-webkit-scrollbar-track {
   background: #82B9CA;
   border-radius: 0.25rem;
@@ -13491,6 +13502,11 @@ textarea.form-control-lg {
 .dropdown-menu.dropdown-style ul::-webkit-scrollbar-thumb {
   background: #FF574A;
   border-radius: 0.25rem;
+}
+@media (max-width: 767.98px) {
+  .dropdown-menu.dropdown-style {
+    width: 60px !important;
+  }
 }
 
 .modal-body {
@@ -13990,6 +14006,12 @@ select.selectpicker {
   background-color: #657a80;
   border-radius: 0.125rem;
 }
+@media (max-width: 767.98px) {
+  .bootstrap-select > .dropdown-menu ul .dropdown-item {
+    font-size: 0.5rem;
+    padding: 0.35rem 0.25rem;
+  }
+}
 @media (min-width: 1920px) {
   .bootstrap-select > .dropdown-menu ul .dropdown-item {
     font-size: 1rem;
@@ -13998,6 +14020,11 @@ select.selectpicker {
 .bootstrap-select > .dropdown-menu ul::-webkit-scrollbar {
   width: 0.563rem;
 }
+@media (max-width: 767.98px) {
+  .bootstrap-select > .dropdown-menu ul::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+}
 .bootstrap-select > .dropdown-menu ul::-webkit-scrollbar-track {
   background: #82B9CA;
   border-radius: 0.25rem;
@@ -14005,6 +14032,11 @@ select.selectpicker {
 .bootstrap-select > .dropdown-menu ul::-webkit-scrollbar-thumb {
   background: #FF574A;
   border-radius: 0.25rem;
+}
+@media (max-width: 767.98px) {
+  .bootstrap-select > .dropdown-menu {
+    padding: 0.5rem 0;
+  }
 }
 
 .bootstrap-select > .dropdown-toggle.bs-placeholder {
