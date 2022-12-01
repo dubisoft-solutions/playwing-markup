@@ -53,6 +53,10 @@
                     background-color: $blue-176;
                     border-radius: .125rem;
                 }
+                @include media-breakpoint-down(md) {
+                    font-size: .625rem!important;
+                    padding: .25rem .5rem;
+                }
                 @include media-breakpoint-up(xxxxl) {
                     font-size: 1rem;
                 }
@@ -60,6 +64,9 @@
         }
         ul::-webkit-scrollbar {
             width: .563rem;
+            @include media-breakpoint-down(md) {
+                width: .25rem;
+            }
         }
         ul::-webkit-scrollbar-track {
             background: $blue-202;
@@ -68,6 +75,9 @@
         ul::-webkit-scrollbar-thumb {
             background: $red-74;
             border-radius: .25rem;
+        }
+        @include media-breakpoint-down(md) {
+            width: 60px!important;
         }
     }
 }
