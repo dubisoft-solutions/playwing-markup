@@ -13346,7 +13346,7 @@ textarea.form-control-lg {
     border: none;
   }
   .form-control::placeholder {
-    font-size: 0.688rem;
+    font-size: 0.813rem;
   }
   .striped-form .form-label {
     font-size: 0.688rem;
@@ -13959,7 +13959,7 @@ select.selectpicker {
 }
 @media (max-width: 767.98px) {
   .bootstrap-select .dropdown-toggle.btn-light::placeholder {
-    font-size: 0.688rem;
+    font-size: 0.813rem !important;
   }
 }
 .bootstrap-select .dropdown-toggle.btn-light:focus {
@@ -14009,7 +14009,7 @@ select.selectpicker {
 @media (max-width: 767.98px) {
   .bootstrap-select > .dropdown-menu ul .dropdown-item {
     font-size: 0.75rem;
-    padding: 0.35rem 0.25rem;
+    padding: 0.35rem 1rem;
   }
 }
 @media (min-width: 1920px) {
@@ -14039,6 +14039,11 @@ select.selectpicker {
   font-style: italic;
   color: #AEAEAE;
 }
+@media (max-width: 767.98px) {
+  .bootstrap-select > .dropdown-toggle.bs-placeholder {
+    font-size: 0.813rem !important;
+  }
+}
 
 .bootstrap-select > .dropdown-toggle.bs-placeholder,
 .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
@@ -14047,6 +14052,14 @@ select.selectpicker {
   font-size: 0.75rem !important;
   font-style: italic;
   color: #AEAEAE;
+}
+@media (max-width: 767.98px) {
+  .bootstrap-select > .dropdown-toggle.bs-placeholder,
+  .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+  .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+  .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+    font-size: 0.813rem !important;
+  }
 }
 
 .tns-outer {
