@@ -12,6 +12,17 @@
     font-size: .938rem;
 }
 
+.flag-icon {
+    width: 1rem;
+    @include media-breakpoint-down(md) {
+        width: .875rem;
+    }
+}
+
+.description {
+    font-size: .875rem;
+}
+
 .footer {
     &::before {
         content: "";

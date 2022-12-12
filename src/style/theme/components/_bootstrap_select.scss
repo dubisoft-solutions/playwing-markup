@@ -21,7 +21,7 @@
             box-shadow: none;
         }
         @include media-breakpoint-down(md) {
-            padding: .625rem .5rem;
+            padding: .5rem;
         }
         &.show,
         &:active,
@@ -65,7 +65,7 @@
                     border-radius: .125rem;
                 }
                 @include media-breakpoint-down(md) {
-                    font-size: .5rem;
+                    font-size: .75rem;
                     padding: .35rem .25rem;
                 }
                 @include media-breakpoint-up(xxxxl) {
