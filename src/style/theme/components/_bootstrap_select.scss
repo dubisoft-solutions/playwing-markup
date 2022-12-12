@@ -12,7 +12,7 @@
             font-style: italic;
             color: $silver;
             @include media-breakpoint-down(md) {
-                font-size: .688rem;
+                font-size: .813rem!important;
             }
         }
         &:focus {
@@ -66,7 +66,7 @@
                 }
                 @include media-breakpoint-down(md) {
                     font-size: .75rem;
-                    padding: .35rem .25rem;
+                    padding: .35rem 1rem;
                 }
                 @include media-breakpoint-up(xxxxl) {
                     font-size: 1rem;
@@ -94,6 +94,9 @@
     font-size: 1rem!important;
     font-style: italic;
     color: $silver;
+    @include media-breakpoint-down(md) {
+        font-size: .813rem!important;
+    }
 }
 
 .bootstrap-select>.dropdown-toggle.bs-placeholder,
@@ -103,4 +106,7 @@
     font-size: .75rem!important;
     font-style: italic;
     color: $silver;
+    @include media-breakpoint-down(md) {
+        font-size: .813rem!important;
+    }
 }
