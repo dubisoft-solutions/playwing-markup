@@ -13432,7 +13432,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767.98px) {
   .dropdown-toggle {
-    font-size: 0.5rem;
+    font-size: 0.625rem;
     padding: 0.25rem 0.5rem;
   }
 }
@@ -13969,7 +13969,7 @@ select.selectpicker {
 }
 @media (max-width: 767.98px) {
   .bootstrap-select .dropdown-toggle.btn-light {
-    padding: 0.625rem 0.5rem;
+    padding: 0.5rem;
   }
 }
 .bootstrap-select .dropdown-toggle.btn-light.show, .bootstrap-select .dropdown-toggle.btn-light:active, .bootstrap-select .dropdown-toggle.btn-light:focus, .bootstrap-select .dropdown-toggle.btn-light:hover {
@@ -14008,7 +14008,7 @@ select.selectpicker {
 }
 @media (max-width: 767.98px) {
   .bootstrap-select > .dropdown-menu ul .dropdown-item {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     padding: 0.35rem 0.25rem;
   }
 }
@@ -14360,6 +14360,19 @@ p {
 
 .icon-size {
   font-size: 0.938rem;
+}
+
+.flag-icon {
+  width: 1rem;
+}
+@media (max-width: 767.98px) {
+  .flag-icon {
+    width: 0.875rem;
+  }
+}
+
+.description {
+  font-size: 0.875rem;
 }
 
 .footer::before {
