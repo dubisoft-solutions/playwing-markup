@@ -5,7 +5,7 @@
             font-size: .938rem;
             color: $black;
             @include media-breakpoint-down(md) {
-                font-size: .625rem;
+                font-size: .688rem;
             }
             @include media-breakpoint-up(xxxxl) {
                 font-size: 1.625rem;
@@ -16,7 +16,7 @@
             line-height: 1rem;
             color: $blue-174;
             @include media-breakpoint-down(md) {
-                font-size: .5rem;
+                font-size: .688rem;
                 line-height: .75rem;
             }
             @include media-breakpoint-up(xxxxl) {
@@ -25,7 +25,7 @@
             }
         }
         @include media-breakpoint-down(md) {
-            padding: .813rem;
+            padding: .813rem .813rem 2.25rem .813rem;
         }
     }
 }
