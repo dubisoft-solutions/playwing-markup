@@ -13368,7 +13368,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767.98px) {
   .card .card-body .card-title {
-    font-size: 0.625rem;
+    font-size: 0.688rem;
   }
 }
 @media (min-width: 1920px) {
@@ -13383,7 +13383,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767.98px) {
   .card .card-body .card-text {
-    font-size: 0.5rem;
+    font-size: 0.688rem;
     line-height: 0.75rem;
   }
 }
@@ -13395,7 +13395,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767.98px) {
   .card .card-body {
-    padding: 0.813rem;
+    padding: 0.813rem 0.813rem 2.25rem 0.813rem;
   }
 }
 
