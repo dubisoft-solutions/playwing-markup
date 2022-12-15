@@ -53,7 +53,10 @@
                                         <span class="input-group-text" id="basic-email">
                                                 <icon class="icon icon-mail icon-size"></icon>
                                             </span>
-                                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
+                                        <input type="email" required class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
+                                        <div class="invalid-feedback">
+                                            Required field*
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -64,13 +67,16 @@
                                         <span class="input-group-text" id="basic-country">
                                                 <icon class="icon icon-flag icon-size"></icon>
                                             </span>
-                                        <select class="selectpicker form-control" title="Country Code" id="basic-country">
-                                                <option>SPAIN (+34)</option>
-                                                <option>SPAIN (+34)</option>
-                                                <option>SPAIN (+34)</option>
-                                                <option>SPAIN (+34)</option>
-                                                <option>SPAIN (+34)</option>
-                                            </select>
+                                        <select class="selectpicker form-control" title="Country Code" required id="basic-country">
+                                            <option value="34">Spain (+34)</option>
+                                            <option value="31">NL (+31)</option>
+                                            <option value="380">Ukraine (+380)</option>
+                                            <option value="48">Poland (+48)</option>
+                                            <option value="49">Germany (+49)</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Required field*
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-12 ps-lg-1 ps-initial">
@@ -85,7 +91,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-12 mt-lg-0 mt-4 text-lg-start text-center">
-                                    <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#requestAcceptedModal">Send SMS</button>
+                                    <button type="submit" class="btn btn-danger">Send SMS</button>
                                 </div>
                             </div>
                         </form>
