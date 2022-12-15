@@ -7,11 +7,28 @@
 
 
 $(function() {
-    $('.selectpicker').selectpicker();
+    initSelectPicker();
     initStepsSlider();
     initRecaptcha('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', ".grecaptcha");
     initFormValidation();
 });
+
+function initSelectPicker() {
+    $('.selectpicker').selectpicker();
+    const selectPickers = document.querySelectorAll('.selectpicker')
+    selectPickers.forEach(function(picker) {
+        picker.addEventListener('invalid', (e) => {
+            console.log("e", picker.value);
+            const parentControl = picker.closest('.dropdown.bootstrap-select');
+            if (parentControl) {
+                parentControl.classList.add('is-invalid')
+                picker.addEventListener("change", (e) => {
+                    parentControl.classList.remove('is-invalid')
+                }, { once: true });
+            }
+        })
+    });
+}
 
 function initStepsSlider() {
     const slidesContainer = document.querySelector('.steps-slider');
@@ -65,12 +82,21 @@ function initFormValidation() {
     const forms = document.querySelectorAll('.needs-validation')
     Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }
+            event.preventDefault()
+            event.stopPropagation()
 
-            form.classList.add('was-validated')
+            if (form.checkValidity()) {
+                // TODO: send request to server
+
+                // cleanup the data
+                form.reset();
+                form.classList.remove('was-validated')
+                var confirmationModal = new bootstrap.Modal(document.getElementById('requestAcceptedModal'))
+                confirmationModal.show();
+
+            } else {
+                form.classList.add('was-validated')
+            }
         }, false)
     })
 }
