@@ -17,7 +17,7 @@
                         <p class="fw-semibold description mb-lg-4 mb-3 pb-1">If you want to Unsubscribe to our service please let us know your Mobile <span class="d-xl-block d-inline">Phone Number and we will send you an SMS (don’t worry you won’t be</span> <span class="d-xl-block d-inline">charge for this SMS)</span>
                         </p>
 
-                        <form class="needs-validation" novalidate>
+                        <form id="subscribeForm" class="needs-validation" novalidate>
                             <div class="row mb-lg-4 mb-2">
                                 <div class="col-lg-6">
                                     <div class="grecaptcha recaptcha-style"></div>
@@ -192,20 +192,20 @@
                             <div class="bg-white rounded-2 pt-lg-5 pt-4 pb-lg-3 pb-3 px-lg-2 px-1">
                                 <p class="mb-3 px-lg-5 px-4"><span class="text-danger">How can we help?</span> Please get in touch and our expert <br> support team will answer all your questions</p>
                                 <div class="divider-decor pb-4 px-lg-5 px-4"></div>
-                                <form class="striped-form">
+                                <form class="striped-form needs-validation" novalidate>
                                     <div class="px-lg-5 px-4">
                                         <div class="mb-lg-3 mb-2">
                                             <label for="inputName" class="form-label">Name *</label>
-                                            <input type="text" class="form-control" id="inputName">
+                                            <input type="text" required class="form-control" id="inputName">
                                         </div>
                                         <div class="mb-lg-3 mb-2">
                                             <label for="inputEmail" class="form-label">Email address *</label>
-                                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                                            <input type="email" required class="form-control" id="inputEmail" aria-describedby="emailHelp">
                                         </div>
 
                                         <div class="mb-lg-3 mb-3">
                                             <label for="messageTextarea" class="form-label">Message</label>
-                                            <textarea class="form-control" id="messageTextarea" rows="5"></textarea>
+                                            <textarea class="form-control" required id="messageTextarea" rows="5"></textarea>
                                         </div>
 
                                         <div class="mb-lg-4 mb-3">
