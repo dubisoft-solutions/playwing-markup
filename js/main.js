@@ -96,23 +96,41 @@ function initRecaptcha(sitekey, containerSelector) {
 function initFormValidation() {
     const forms = document.querySelectorAll('.needs-validation')
     Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-            event.preventDefault()
-            event.stopPropagation()
+        if (form.id == 'subscribeForm') {
+            form.addEventListener('submit', event => validateSubscribeUsForm(event, form));
+        } else {
+            form.addEventListener('submit', event => genericFormsValidation(event, form));
+        }
 
-            if (form.checkValidity()) {
-                // TODO: send request to server
-
-                // cleanup the data
-                form.reset();
-                form.classList.remove('was-validated')
-                var confirmationModal = new bootstrap.Modal(document.getElementById('requestAcceptedModal'))
-                confirmationModal.show();
-
-            } else {
-                form.classList.add('was-validated')
-            }
-        }, false)
+        
     })
+}
+
+function validateSubscribeUsForm(event, form) {
+    event.preventDefault()
+    event.stopPropagation()
+
+    if (form.checkValidity()) {
+        // TODO: send request to server
+
+        // cleanup the data
+        form.reset();
+        form.classList.remove('was-validated')
+
+        var confirmationModal = new bootstrap.Modal(document.getElementById('requestAcceptedModal'))
+        confirmationModal.show();
+
+    } else {
+        form.classList.add('was-validated')
+    }
+}
+
+function genericFormsValidation(event, form) {
+    if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
 }
 //# sourceMappingURL=main.js.map
